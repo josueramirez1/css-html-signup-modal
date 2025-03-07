@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: no-repeat center/cover url(../img/login.jpg);
+}
+
+.container {
+  background-color: #fff;
+  flex-direction: column;
+  width: 350px;
+  padding: 2.2rem;
+  border-radius: 11px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1;
+}
+
+.container .title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .title-container .close-btn {
+  align-self: flex-end;
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container .title,
+#signup-form .cta-title,
+#signup-form fieldset {
+  align-self: center;
+}
+
+.title-container .title,
+#signup-form .cta-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.title-container .sign-up-description {
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 15px 0;
+}
+
+#signup-form input[type="text"],
+#signup-form input[type="password"] {
+  border-radius: 4px;
+  border: 2px solid hsl(0, 0%, 75%);
+  font-size: 0.8rem;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+#signup-form fieldset {
+  border: none;
+  margin: 10px 0;
+  font-size: 0.7rem;
+
+  display: flex;
+  gap: 0.6rem;
+}
+
+#signup-form input[type="submit"] {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, rgb(195, 0, 195), rgb(253, 130, 151));
+  color: white;
+  padding: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#signup-form input[type="submit"]:hover {
+  background: linear-gradient(
+    to right,
+    hsl(300, 100%, 28%),
+    hsl(350, 97%, 65%)
+  );
+}
+
+#signup-form hr {
+  margin: 1.2rem 0;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+#signup-form .app-store-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0 0;
+  gap: 0.6rem;
+}
+
+#signup-form .app-store-container a {
+  width: 100%;
+}
+
+#signup-form .app-store-container a img {
+  width: 100%;
+}
